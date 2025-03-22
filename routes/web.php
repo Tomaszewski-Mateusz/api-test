@@ -6,5 +6,5 @@ use App\Http\Controllers\PetController;
 Route::resource('pet', PetController::class);
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/pet');
 });
